@@ -1,0 +1,9 @@
+surrogates/HMS/*.npy
+ablateInputs/slabs/_*/*
+ablateInputs/0dIgnition/_ignitionDelayPentane/*
+ablateInputs/0dIgnition/_ignitionDelayMMA/*
+ablateInputs/0dIgnition/*/_ignitionDelayMMA/*
+ablateInputs/0dIgnition/C1/_ignitionDelayGriMech/*
+ablateInputs/0dIgnition/C5/_ignitionDelayPentane/*
+ablateOutputs/*.npy
+!ablateOutputs/*_B.npy
