@@ -270,18 +270,16 @@ solvers:
             - !ablate::eos::radiationProperties::SootMeanProperties
               eos: *eos
         emissivity: 0.9
-        sublimationModel: !ablate::boundarySolver::physics::subModels::ArrheniusSublimation
+        sublimationModel: !ablate::boundarySolver::physics::subModels::TemperatureSublimation
             properties:
                 specificHeat: 1270
-                conductivity: 0.25 
-                preExponentialFactor: 269153000
-                activationEnergy: 99100
-                density:  1190.0 
+                conductivity: 0.25
+                density:  1190.0
                 sublimationTemperature: 653
                 latentHeatOfFusion: 840890
             initialization:  !ablate::mathFunctions::Linear
                 start: 0.0
-                end: 0.005 
+                end: 0.005
                 startValues: [600]
                 endValues: [300]
             options:
