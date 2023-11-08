@@ -79,7 +79,7 @@ timestepper:
       # class that creates the required fields for the compressible flow solver (rho, rhoE, rhoU, ...)
       - !ablate::finiteVolume::CompressibleFlowFields
         eos: !ablate::eos::TChem  &eos
-          mechFile: ../mechs/MMAReduced.soot.10.yml
+          mechFile: ../mechs/MMA_Reduced_10.yaml
           options:
             # set a minimum temperature for the chemical kinetics ode integration
             thresholdTemperature: 560

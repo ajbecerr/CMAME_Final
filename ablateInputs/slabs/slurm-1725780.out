@@ -1,0 +1,1007 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) intel-classic/2021.6.0-magic   3) jobutils/1.0       5) StdEnv
+  2) mvapich2/2.3.7                 4) texlive/20220321
+
+Lmod is automatically replacing "intel-classic/2021.6.0-magic" with
+"gcc/10.3.1-magic".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) mvapich2/2.3.7
+
+Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10DM Object:  36 MPI processes
+  type: plex
+ in 2 dimensions:
+  Min/Max of 0-cells per rank: 150/233
+  Min/Max of 1-cells per rank: 276/431
+  Min/Max of 2-cells per rank: 127/199
+Labels:
+  depth: 3 strata with value/size (0 (180), 1 (333), 2 (154))
+  celltype: 3 strata with value/size (0 (180), 1 (333), 4 (154))
+  main: 1 strata with value/size (1 (667))
+  inlet: 0 strata with value/size ()
+  outlet: 0 strata with value/size ()
+  wall: 0 strata with value/size ()
+  slab: 1 strata with value/size (1 (81))
+  flowRegion: 1 strata with value/size (1 (613))
+  boundaryCells: 1 strata with value/size (1 (81))
+  boundaryFaces: 1 strata with value/size (1 (13))
+  ghost: 2 strata with value/size (2 (66), 1 (138))
+  interiorFlowRegion: 1 strata with value/size (1 (586))
+Ablate Information:
+	minCellRadius: 0.000180008 m
+[1]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[1]PETSC ERROR: Unexpected data in file
+[1]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[1]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[1]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[1]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[1]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[1]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[1]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[1]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[1]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[1]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[1]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[1]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[1]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[1]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[1]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[2]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[2]PETSC ERROR: Unexpected data in file
+[2]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[2]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[2]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[2]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[2]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[2]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[2]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[2]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[2]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[2]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[2]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[2]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[2]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[2]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[2]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[2]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[2]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[2]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[2]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[2]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[2]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[2]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[3]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[3]PETSC ERROR: Unexpected data in file
+[3]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[3]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[3]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[3]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[3]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[3]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[3]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[3]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[3]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[3]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[3]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[3]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[3]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[3]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[3]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[3]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[3]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[3]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[3]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[3]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[3]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[3]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[4]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[4]PETSC ERROR: Unexpected data in file
+[4]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[4]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[4]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[4]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[4]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[4]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[4]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[4]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[4]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[4]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[4]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[4]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[4]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[4]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[4]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[4]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[4]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[4]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[4]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[4]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[4]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[4]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[5]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[5]PETSC ERROR: Unexpected data in file
+[5]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[5]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[5]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[5]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[5]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[5]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[5]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[5]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[5]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[5]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[5]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[5]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[5]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[5]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[5]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[5]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[5]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[5]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[5]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[5]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[5]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[5]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[6]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[6]PETSC ERROR: Unexpected data in file
+[6]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[6]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[6]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[6]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[6]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[6]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[6]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[6]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[6]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[6]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[6]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[6]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[6]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[6]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[6]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[6]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[6]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[6]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[6]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[6]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[6]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[6]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[7]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[7]PETSC ERROR: Unexpected data in file
+[7]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[7]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[7]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[7]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[7]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[7]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[7]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[7]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[7]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[7]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[7]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[7]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[7]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[7]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[7]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[7]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[7]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[7]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[7]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[7]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[7]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[7]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[8]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[8]PETSC ERROR: Unexpected data in file
+[8]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[8]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[8]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[8]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[8]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[8]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[8]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[8]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[8]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[8]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[8]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[8]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[8]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[8]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[8]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[8]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[8]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[8]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[8]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[8]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[8]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[8]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[9]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[9]PETSC ERROR: Unexpected data in file
+[9]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[9]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[9]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[9]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[9]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[9]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[9]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[9]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[9]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[9]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[9]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[9]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[9]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[9]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[9]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[9]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[9]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[9]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[9]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[9]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[9]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[9]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[10]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[10]PETSC ERROR: Unexpected data in file
+[10]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[10]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[10]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[10]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[10]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[10]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[10]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[10]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[10]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[10]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[10]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[10]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[10]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[10]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[10]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[10]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[10]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[10]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[10]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[10]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[10]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[10]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[11]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[11]PETSC ERROR: Unexpected data in file
+[11]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[11]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[11]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[11]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[11]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[11]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[11]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[11]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[11]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[11]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[11]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[11]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[11]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[11]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[11]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[11]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[11]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[11]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[11]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[11]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[11]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[11]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[12]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[12]PETSC ERROR: Unexpected data in file
+[12]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[12]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[12]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[12]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[12]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[12]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[12]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[12]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[12]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[12]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[12]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[12]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[12]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[12]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[12]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[12]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[12]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[12]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[12]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[12]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[12]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[12]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[13]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[13]PETSC ERROR: Unexpected data in file
+[13]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[13]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[13]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[13]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[13]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[13]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[13]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[13]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[13]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[13]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[13]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[13]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[13]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[13]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[13]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[13]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[13]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[13]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[13]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[13]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[13]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[13]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[15]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[15]PETSC ERROR: Unexpected data in file
+[15]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[15]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[15]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[15]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[15]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[15]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[15]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[15]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[15]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[15]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[15]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[15]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[15]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[15]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[15]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[15]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[15]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[15]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[15]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[15]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[15]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[15]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[16]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[16]PETSC ERROR: Unexpected data in file
+[16]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[16]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[16]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[16]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[16]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[16]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[16]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[16]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[16]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[16]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[16]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[16]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[16]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[16]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[16]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[16]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[16]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[16]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[16]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[16]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[16]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[16]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[17]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[17]PETSC ERROR: Unexpected data in file
+[17]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[17]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[17]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[17]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[17]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[17]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[17]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[17]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[17]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[17]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[17]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[17]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[17]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[17]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[17]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[17]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[17]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[17]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[17]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[17]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[17]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[17]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[21]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[21]PETSC ERROR: Unexpected data in file
+[21]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[21]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[21]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[21]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[21]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[21]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[21]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[21]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[21]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[21]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[21]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[21]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[21]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[21]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[21]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[21]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[21]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[21]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[21]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[21]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[21]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[21]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[22]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[22]PETSC ERROR: Unexpected data in file
+[22]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[22]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[22]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[22]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[22]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[22]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[22]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[22]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[22]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[22]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[22]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[22]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[22]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[22]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[22]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[22]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[22]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[22]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[22]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[22]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[22]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[22]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[23]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[23]PETSC ERROR: Unexpected data in file
+[23]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[23]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[23]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[23]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[23]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[23]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[23]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[23]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[23]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[23]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[23]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[23]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[23]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[23]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[23]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[23]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[23]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[23]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[23]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[23]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[23]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[23]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[25]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[25]PETSC ERROR: Unexpected data in file
+[25]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[25]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[25]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[25]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[25]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[25]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[25]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[25]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[25]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[25]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[25]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[25]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[25]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[25]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[25]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[25]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[25]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[25]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[25]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[25]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[25]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[25]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[26]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[26]PETSC ERROR: Unexpected data in file
+[26]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[26]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[26]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[26]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[26]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[26]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[26]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[26]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[26]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[26]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[26]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[26]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[26]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[26]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[26]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[26]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[26]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[26]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[26]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[26]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[26]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[26]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[27]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[27]PETSC ERROR: Unexpected data in file
+[27]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[27]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[27]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[27]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[27]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[27]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[27]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[27]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[27]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[27]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[27]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[27]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[27]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[27]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[27]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[27]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[27]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[27]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[27]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[27]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[27]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[27]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[28]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[28]PETSC ERROR: Unexpected data in file
+[28]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[28]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[28]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[28]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[28]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[28]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[28]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[28]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[28]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[28]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[28]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[28]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[28]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[28]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[28]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[28]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[28]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[28]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[28]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[28]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[28]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[28]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[29]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[29]PETSC ERROR: Unexpected data in file
+[29]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[29]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[29]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[29]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[29]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[29]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[29]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[29]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[29]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[29]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[29]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[29]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[29]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[29]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[29]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[29]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[29]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[29]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[29]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[29]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[29]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[29]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[30]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[30]PETSC ERROR: Unexpected data in file
+[30]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[30]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[30]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[30]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[30]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[30]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[30]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[30]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[30]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[30]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[30]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[30]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[30]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[30]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[30]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[30]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[30]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[30]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[30]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[30]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[30]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[30]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[31]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[31]PETSC ERROR: Unexpected data in file
+[31]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[31]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[31]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[31]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[31]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[31]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[31]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[31]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[31]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[31]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[31]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[31]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[31]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[31]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[31]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[31]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[31]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[31]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[31]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[31]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[31]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[31]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[32]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[32]PETSC ERROR: Unexpected data in file
+[32]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[32]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[32]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[32]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[32]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[32]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[32]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[32]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[32]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[32]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[32]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[32]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[32]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[32]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[32]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[32]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[32]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[32]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[32]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[32]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[32]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[32]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[33]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[33]PETSC ERROR: Unexpected data in file
+[33]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[33]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[33]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[33]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[33]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[33]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[33]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[33]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[33]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[33]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[33]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[33]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[33]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[33]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[33]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[33]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[33]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[33]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[33]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[33]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[33]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[33]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[34]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[34]PETSC ERROR: Unexpected data in file
+[34]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[34]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[34]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[34]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[34]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[34]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[34]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[34]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[34]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[34]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[34]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[34]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[34]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[34]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[34]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[34]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[34]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[34]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[34]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[34]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[34]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[34]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[35]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[35]PETSC ERROR: Unexpected data in file
+[35]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[35]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[35]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[35]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[35]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[35]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[35]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[35]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[35]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[35]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[35]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[35]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[35]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[35]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[35]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[35]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[35]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[35]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[35]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[35]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[35]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[35]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Unexpected data in file
+[0]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[0]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[0]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[0]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[0]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[0]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[0]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[0]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[0]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[0]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[0]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[0]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[0]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[0]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[0]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[0]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[0]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[0]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[0]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[0]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[0]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[0]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[1]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[1]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[1]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[1]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[1]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[1]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[1]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[14]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[14]PETSC ERROR: Unexpected data in file
+[14]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[14]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[14]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[14]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[14]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[14]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[14]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[14]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[14]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[14]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[14]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[14]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[14]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[14]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[14]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[14]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[14]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[14]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[14]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[14]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[14]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[14]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[18]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[18]PETSC ERROR: Unexpected data in file
+[18]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[18]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[18]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[18]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[18]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[18]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[18]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[18]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[18]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[18]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[18]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[18]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[18]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[18]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[18]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[18]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[18]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[18]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[18]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[18]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[18]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[18]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[19]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[19]PETSC ERROR: Unexpected data in file
+[19]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[19]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[19]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[19]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[19]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[19]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[19]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[19]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[19]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[19]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[19]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[19]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[19]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[19]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[19]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[19]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[19]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[19]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[19]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[19]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[19]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[19]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[20]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[20]PETSC ERROR: Unexpected data in file
+[20]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[20]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[20]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[20]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[20]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[20]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[20]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[20]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[20]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[20]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[20]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[20]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[20]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[20]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[20]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[20]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[20]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[20]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[20]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[20]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[20]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[20]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+[24]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[24]PETSC ERROR: Unexpected data in file
+[24]PETSC ERROR: Block size of array in file is 71, not 72 as expected
+[24]PETSC ERROR: WARNING! There are unused option(s) set! Could be the program crashed before usage or a spelling mistake, etc!
+[24]PETSC ERROR:   Option left: name:-timeStepperts_adapt_monitor value: true source: code
+[24]PETSC ERROR:   Option left: name:-timeStepperts_adapt_safety value: 0.9 source: code
+[24]PETSC ERROR:   Option left: name:-timeStepperts_adapt_type value: physicsConstrained source: code
+[24]PETSC ERROR:   Option left: name:-timeStepperts_dt value: 1.0E-10 source: code
+[24]PETSC ERROR:   Option left: name:-timeStepperts_max_steps value: 10000000 source: code
+[24]PETSC ERROR:   Option left: name:-timeStepperts_max_time value: 100000 source: code
+[24]PETSC ERROR:   Option left: name:-timeStepperts_type value: rk source: code
+[24]PETSC ERROR: See https://petsc.org/release/faq/ for trouble shooting.
+[24]PETSC ERROR: Petsc Development GIT revision: v3.20.1-154-g1024d75c3cc  GIT Date: 2023-11-06 20:45:07 +0000
+[24]PETSC ERROR: /usr/workspace/ajbecerr/ablateOpt/ablate on a arch-ablate-opt named quartz286 by ajbecerr Wed Nov  8 08:34:24 2023
+[24]PETSC ERROR: Configure options PETSC_ARCH=arch-ablate-opt --with-debugging=0 --download-ctetgen --download-tetgen --download-egads --download-hdf5 --download-metis --download-mumps --download-parmetis --download-scalapack --download-slepc --download-suitesparse --download-superlu_dist --download-triangle --download-zlib --download-opencascade --with-libpng --with-64-bit-indices=1 --with-cc=mpicc --with-cxx=mpicxx --with-fc=mpifort --download-kokkos --with-blaslapack-dir=/usr/tce/packages/mkl/mkl-2022.1.0/lib/intel64/ --download-kokkos-commit=3.7.01
+[24]PETSC ERROR: #1 PetscViewerHDF5ReadSizes_Private() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:130
+[24]PETSC ERROR: #2 PetscViewerHDF5Load() at /usr/WS1/ajbecerr/petsc/src/vec/is/utils/hdf5io.c:234
+[24]PETSC ERROR: #3 VecLoad_HDF5() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:129
+[24]PETSC ERROR: #4 VecLoad_Default() at /usr/WS1/ajbecerr/petsc/src/vec/vec/utils/vecio.c:212
+[24]PETSC ERROR: #5 VecLoad_Plex_Local() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:750
+[24]PETSC ERROR: #6 VecLoad_Plex_HDF5_Internal() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plexhdf5.c:519
+[24]PETSC ERROR: #7 VecLoad_Plex() at /usr/WS1/ajbecerr/petsc/src/dm/impls/plex/plex.c:770
+[24]PETSC ERROR: #8 VecLoad() at /usr/WS1/ajbecerr/petsc/src/vec/vec/interface/vector.c:1157
+[24]PETSC ERROR: #9 Restore() at /usr/workspace/ajbecerr/ablate/src/domain/subDomain.cpp:687
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_22][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_24][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_25][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_27][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_28][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_0][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_1][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_2][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_3][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_4][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_5][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_6][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_7][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_8][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_9][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_10][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_11][error_sighandler] Caught error: Aborted (signal 6)
+[quartz286:mpi_rank_12][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_13][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_14][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_15][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_16][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_17][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_18][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_19][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_20][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_21][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_23][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_26][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_29][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_30][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_31][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_32][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_33][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_34][error_sighandler] Caught error: Aborted (signal 6)
+terminate called after throwing an instance of 'ablate::utilities::PetscUtilities::ErrorChecker::PetscError'
+  what():  Unexpected data in file: Block size of array in file is 71, not 72 as expected
+[quartz286:mpi_rank_35][error_sighandler] Caught error: Aborted (signal 6)
+Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10Warning: Restarting simulation using a different version of ABLATE 0.11.26 vs. 0.12.10srun: error: quartz286: tasks 0-35: Aborted (core dumped)
