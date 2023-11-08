@@ -10,12 +10,12 @@ if str(sys.argv[1]) == 'pmma':
     x3 = params[4]
     x4 = params[5]
     
-    with open ('../ablateInputs/mechs/MMA_Reduced.yaml', "r") as myfile:
+    with open ('../ablateInputs/mechs/MMAReduced.soot.yml', "r") as myfile:
         inputfile = myfile.readlines()
-        inputfile[1307] = '  rate-constant: {A: 1.04e+14, b: 0.0, Ea: '+str(x1)+'}\n'
-        inputfile[1908] = '  rate-constant: {A: 6.42e+15, b: -0.351, Ea: '+str(x2)+'}\n'
-        inputfile[1894] = '  rate-constant: {A: 1.0e+12, b: 0.0, Ea: '+str(x3)+'}\n'
-        inputfile[1892] = '  rate-constant: {A: 1.86e+05, b: '+str(x4)+', Ea: 2786.81}\n'   
+        inputfile[1325] = '  rate-constant: {A: 2.65e+16, b: -0.6707, Ea: '+str(x1)+'}\n'
+        inputfile[1926] = '  rate-constant: {A: 6.42e+15, b: -0.351, Ea: '+str(x2)+'}\n'
+        inputfile[1912] = '  rate-constant: {A: 1.0e+12, b: 0.0, Ea: '+str(x3)+'}\n'
+        inputfile[1920] = '  rate-constant: {A: 1.86e+05, b: '+str(x4)+', Ea: 2786.81}\n'   
         np.savetxt('../ablateInputs/mechs/MMA_Reduced_'+str(sys.argv[2])+'.yaml', inputfile, fmt='%s', newline='')
     
 else:
