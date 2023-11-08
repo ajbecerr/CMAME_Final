@@ -11,7 +11,7 @@ if str(sys.argv[1]) == 'pmma':
     with open ('../ablateInputs/slabs/slabBurner.2D.pmma.1_soot.yaml', "r") as myfile:
         inputfile = myfile.readlines()
         inputfile[4] = '  title: _2dSlabPMMA_'+str(sys.argv[2])+'\n'
-        inputfile[81] = '          mechFile: ../mechs/MMAReduced.soot.'+str(sys.argv[2])+'.yml\n'
+        inputfile[81] = '          mechFile: ../mechs/MMA_Reduced_'+str(sys.argv[2])+'.yaml\n'
         inputfile[212] = '                velFac: '+str(x1)+'\n'
         inputfile[254] = '        latentHeatOfFusion: '+str(x2)+'\n'
         np.savetxt('../ablateInputs/slabs/slabBurner.2D.pmma.'+str(sys.argv[2])+'.yaml', inputfile, fmt='%s', newline='')
