@@ -1323,7 +1323,7 @@ species:
 
 reactions:
 - equation: H + O2 <=> O + OH  # Reaction 1
-  rate-constant: {A: 1.04e+14, b: 0.0, Ea: 1.52861e+04}
+  rate-constant: {A: 2.65e+16, b: -0.6707, Ea: 1.7041e+04}
 - equation: O + H2 <=> H + OH  # Reaction 2
   duplicate: true
   rate-constant: {A: 3.818e+12, b: 0.0, Ea: 7947.9}
