@@ -12,7 +12,7 @@ import math
 from scipy.optimize import curve_fit
 
 
-N = 32 #number of sims
+N = 64 #number of sims
 
 
 #Independent params
@@ -24,16 +24,17 @@ n_params = len(param_names)
 #Temperature ranges [melting to boiling in C]
 
 G = np.linspace(5,20,N)
-E1 = np.linspace(1.2,1.8, N)*10000  #12000 to 18000 for reaction 1
+E1 = np.linspace(15430, 15790, N)    #12000 to 18000 for reaction 1
 E257 =  np.linspace(6.4, 9.6, N)*10000        #64000 to 96000 "E2" for reaction 257
 E250 =  np.linspace(5.6, 8.4, N)* 1000       # 5600 to 8400 "E3" for reaction 250
 b249 = np.linspace(2.03,3.05, N)        #2.03 to 3.05 "b4" for reaction 249
+lv = np.linspace(840890*0.75,840890*1.25,N) #25% on latent heat which will be calibrated
 
 
 # maximum and minimum values for all parameters
 
-min_params = np.array([min(G), min(E1), min(E257), min(E250), min(b249)])
-max_params = np.array([max(G), max(E1), max (E257), max(E250), max(b249)])
+min_params = np.array([min(G), min(E1), min(E257), min(E250), min(b249), min(lv)])
+max_params = np.array([max(G), max(E1), max (E257), max(E250), max(b249), max(lv)])
 
 
 # number of simulations
@@ -69,7 +70,7 @@ import matplotlib.pyplot as plt
 
 # determine the density of gas at the inlet
 # # Load in the cti mech file
-gas = ct.Solution('../ablateInputs/mechs/MMA_Reduced.yaml')
+gas = ct.Solution('MMA_Reduced.yaml')
 
 # Define inlet density
 inletTemperature = 300  # Kelvin
@@ -122,7 +123,7 @@ for i in range(0,np.size(Flow, 0)):
 velFactors = velFactors[..., None]
 lhs_scaled = np.concatenate((lhs_scaled, velFactors), 1)
 
-lhs_scaled = np.delete(lhs_scaled, 4, axis = 1)
+lhs_scaled = np.delete(lhs_scaled, 5, axis = 1)
 
 
 ablate_params = ['G', 'E1', 'E257', 'E250', 'b249','velFac']
@@ -133,3 +134,4 @@ import pandas as pd
 
 
 pd.DataFrame(lhs_scaled, columns = ablate_params).to_csv('ablate_parameters_MMA.csv')
+
