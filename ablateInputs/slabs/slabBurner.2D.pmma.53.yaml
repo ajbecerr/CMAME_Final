@@ -252,7 +252,7 @@ solvers:
       name: boundaryFaces
     processes:
       - !ablate::boundarySolver::physics::Sublimation
-        latentHeatOfFusion: 770135.1259827062
+        latentHeatOfFusion: 840890
         transportModel: !ablate::eos::transport::Sutherland
           eos: *eos
         pgs: *pgs
@@ -278,7 +278,7 @@ solvers:
                 activationEnergy: 85700
                 density:  1190.0 
                 sublimationTemperature: 653
-                latentHeatOfFusion: 840890
+                latentHeatOfFusion: 770135.1259827062
             initialization:  !ablate::mathFunctions::Linear
                 start: 0.0
                 end: 0.005 
