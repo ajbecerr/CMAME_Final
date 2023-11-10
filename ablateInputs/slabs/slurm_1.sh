@@ -19,5 +19,5 @@ export PETSC_ARCH="arch-ablate-opt-gcc"
 export PKG_CONFIG_PATH="${PETSC_DIR}/${PETSC_ARCH}/lib/pkgconfig:$PKG_CONFIG_PATH"
 export HDF5_ROOT="${PETSC_DIR}/${PETSC_ARCH}"  
 export PATH="${PETSC_DIR}/${PETSC_ARCH}/bin:$PATH"
-srun -n36 /usr/workspace/ajbecerr/ablateOpt/ablate --input /p/lustre2/ubchrest/CMAME_Final/ablateInputs/slabs/slabBurner.2D.pmma.1_soot.yaml
+srun -n36 /usr/workspace/ajbecerr/ablateOpt/ablate --input /p/lustre2/ubchrest/CMAME_Final/ablateInputs/slabs/slabBurner.2D.pmma.1_soot_updated.yaml
 # srun -n36 /usr/workspace/ajbecerr/ablateOpt/ablate --input /p/lustre2/ubchrest/CMAME_Final/ablateInputs/slabs/slabBurner.2D.$1.$2.yaml
