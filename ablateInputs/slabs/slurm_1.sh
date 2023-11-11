@@ -6,7 +6,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH -A sunyb
 #SBATCH --mail-user=ajbecerr@buffalo.edu
-# module load python
+module load python
 cd ../../preprocessing/
 python perturbMechs.py $1 $2
 python perturbSlabs.py $1 $2
