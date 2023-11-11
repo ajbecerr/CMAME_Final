@@ -60,7 +60,7 @@ boundary = np.array([0, 0, 0, 0, 0])
 for file in boundaryFiles:
     f = h5py.File(file, 'r')
     Rdots = list(f['cell_fields/slab boundary_monitor_regressionRate'][0])
-    Qtots = list(f['cell_fields/slab boundary_monitor_radiation'][0]) # list(f['cell_fields/slab boundary_monitor_radiation'][0])
+    Qtots = list(np.array(f['cell_fields/slab boundary_monitor_conduction'][0]) + np.array(f['cell_fields/slab boundary_monitor_extraRad'][0]) + np.array(f['cell_fields/slab boundary_monitor_radiation'][0]))
     Times = [f['time'][0][0] for i in range(len(boundary_cell_centers))]
     boundary_ij = np.hstack((np.array(list(zip(Times, Rdots, Qtots))), boundary_cell_centers))    
     boundary = np.vstack((boundary, boundary_ij))
