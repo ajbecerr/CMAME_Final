@@ -25,7 +25,7 @@ timestepper:
     interval: 1000 # results are saved at every 5 steps.  In real simulations this should be much larger.
   # load in the gmsh produced mesh file
   domain: !ablate::domain::MeshFile
-    path: slabBurner3DMesh.lowG.3_8_23.msh
+    path: ../geom/slabBurner3DMesh.lowG.3_8_23.msh
     options:
       dm_plex_check_all: false # check to make sure the mesh if valid from gMsh
       dm_distribute: false # turn off default dm_distribute so that we can extrude label first
@@ -107,7 +107,7 @@ timestepper:
       - !ablate::finiteVolume::CompressibleFlowFields
         # The soot equation of state is an extension of the tChem eos with support for a simple soot model
         eos: !ablate::eos::TChem  &eos
-          mechFile: MMAReduced.soot.yml
+          mechFile: ../mechs/MMAReduced.soot.yml
           options:
             # set a minimum temperature for the chemical kinetics ode integration
             thresholdTemperature: 560         
