@@ -12,12 +12,12 @@
 
 ##### Load Required modules
 # gcc
-module load gcc/10.3.1-magic
+module load clang/14.0.6-magic
 module load cmake/3.25.2
 
 # Load PETSC ENV
 export PETSC_DIR="/usr/workspace/ajbecerr/petsc"
-export PETSC_ARCH="arch-ablate-opt-gcc" # arch-ablate-debug or arch-ablate-opt
+export PETSC_ARCH="arch-ablate-opt" # arch-ablate-debug or arch-ablate-opt
 export PKG_CONFIG_PATH="${PETSC_DIR}/${PETSC_ARCH}/lib/pkgconfig:$PKG_CONFIG_PATH"
 export HDF5_ROOT="${PETSC_DIR}/${PETSC_ARCH}"  
 # Include the bin directory to access mpi commands
@@ -38,6 +38,7 @@ export FILE=/p/lustre2/ubchrest/CMAME_Final/ablateInputs/slabs/slab_lowG_1011_ar
 srun -n2304 /usr/workspace/ajbecerr/ablateOpt/ablate \
    --input $FILE \
    -yaml::environment::title $TITLE \
-   -yaml::timestepper::domain::options::dm_refine $DM_REFINE -build_twosided redscatter
+   -yaml::timestepper::domain::options::dm_refine $DM_REFINE -build_twosided redscatter \
+   -log_trace [$SLURM_JOBID]
 
 echo 'Done'

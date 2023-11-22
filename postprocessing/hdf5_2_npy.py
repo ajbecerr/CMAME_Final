@@ -31,17 +31,19 @@ def compute_cell_centers(cells, vertices, dimensions=-1):
 
 if str(sys.argv[1]) == 'pmma':
     domainFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/domain/*.hdf5')
-    boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/*boundary_monitor/*.hdf5')
+    boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/slabboundary/*.hdf5')
+    boundaryMonitorFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/slabboundary_monitor/*.hdf5')
 else:
     domainFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/domain/*.hdf5')
-    boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/*boundary_monitor/*.hdf5')
+    boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/slabboundary/*.hdf5')
+    boundaryMonitorFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/slabboundary_monitor/*.hdf5')
 
 domainF0 = h5py.File(domainFiles[0], 'r')
 domainCells = list(domainF0['viz/topology/cells'])
 domainVertices = list(domainF0['geometry/vertices'])
 domain_cell_centers = compute_cell_centers(domainCells, domainVertices)
 
-boundaryF0 = h5py.File(boundaryFiles[0], 'r')
+boundaryF0 = h5py.File(boundaryMonitorFiles[0], 'r')
 boundaryCells = list(boundaryF0['viz/topology/cells'])
 boundaryVertices = list(boundaryF0['geometry/vertices'])
 boundary_cell_centers = compute_cell_centers(boundaryCells, boundaryVertices)
@@ -52,15 +54,18 @@ for file in domainFiles:
     Temps = list(f['cell_fields/aux_temperature'][0])
     Vels = list(f['cell_fields/aux_velocity'][0])
     Times = [f['time'][0][0] for i in range(len(domain_cell_centers))]
-    domain_ij = np.hstack((np.array(list(zip(Times, Temps, Vels))), domain_cell_centers))
+    domain_ij = np.hstack((np.array(list(zip(Times, Temps, Vels)), dtype='object'), domain_cell_centers))
     domain = np.vstack((domain, domain_ij))
 domain = domain[1:]
 
 boundary = np.array([0, 0, 0, 0, 0])
-for file in boundaryFiles:
+for file in boundaryMonitorFiles:
+    print(file)
     f = h5py.File(file, 'r')
-    Rdots = list(f['cell_fields/slab boundary_monitor_regressionRate'][0])
-    Qtots = list(np.array(f['cell_fields/slab boundary_monitor_conduction'][0]) + np.array(f['cell_fields/slab boundary_monitor_extraRad'][0]) + np.array(f['cell_fields/slab boundary_monitor_radiation'][0]))
+    print(list(f['time']))
+    print(list(f['fields/slabboundary_monitor']))
+    Rdots = list(f['fields/slabboundary_monitor_regressionRate'][0])
+    Qtots = list(np.array(f['cell_fields/slabboundary_monitor_conduction'][0]) + np.array(f['cell_fields/slabboundary_monitor_extraRad'][0]) + np.array(f['cell_fields/slabboundary_monitor_radiation'][0]))
     Times = [f['time'][0][0] for i in range(len(boundary_cell_centers))]
     boundary_ij = np.hstack((np.array(list(zip(Times, Rdots, Qtots))), boundary_cell_centers))    
     boundary = np.vstack((boundary, boundary_ij))

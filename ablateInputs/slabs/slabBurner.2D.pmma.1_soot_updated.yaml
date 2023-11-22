@@ -2,7 +2,7 @@
 ---
 # metadata for the simulation
 environment:
-  title: _2dSlabPMMA_1
+  title: _2dSlabPMMA_Kolos
   tagDirectory: false
 # global arguments that can be used by petsc
 arguments:
