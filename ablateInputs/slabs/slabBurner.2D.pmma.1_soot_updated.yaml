@@ -1,8 +1,8 @@
-# this input file was originally setup by MM to replicate the full width low G burn on 3/8/23, edited by AB on 8/7/23 for UQ ensembles
+# this input file was edited by AB on 12/2/23 for UQ ensembles with ABLATE (0.12.5) + PETSc (3.19.99)
 ---
 # metadata for the simulation
 environment:
-  title: _2dSlabPMMA_Kolos
+  title: _2dSlabPMMA_AB
   tagDirectory: false
 # global arguments that can be used by petsc
 arguments:
@@ -253,6 +253,7 @@ solvers:
       name: boundaryFaces
     processes:
       - !ablate::boundarySolver::physics::Sublimation
+        latentHeatOfFusion: 840890
         transportModel: !ablate::eos::transport::Sutherland
           eos: *eos
         pgs: *pgs
@@ -270,22 +271,7 @@ solvers:
             - !ablate::eos::radiationProperties::SootMeanProperties
               eos: *eos
         emissivity: 0.9
-        sublimationModel: !ablate::boundarySolver::physics::subModels::ArrheniusSublimation
-            properties:
-                specificHeat: 1270
-                conductivity: 0.25 
-                preExponentialFactor: 45
-                activationEnergy: 85700
-                density:  1190.0 
-                latentHeatOfFusion: 840890
-            initialization:  !ablate::mathFunctions::Linear
-                start: 0.0
-                end: 0.005 
-                startValues: [600]
-                endValues: [300]
-            options:
-                dm_plex_box_faces: 20
-                dm_plex_box_upper: 0.005
+        solidDensity: 1190.0
     monitors:
       - !ablate::monitors::BoundarySolverMonitor
   - !ablate::radiation::VolumeRadiation
