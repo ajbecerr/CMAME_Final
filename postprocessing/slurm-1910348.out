@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/p/lustre2/ubchrest/CMAME_Final/postprocessing/hdf5_2_npy.py", line 54, in <module>
+    Temps = list(f['cell_fields/aux_temperature'][0])
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/collab/usr/gapps/python/build/spack-toss4.1/var/spack/environments/python/._view/75prb56irmif5ejtirjthpx6kq3gqo52/lib/python3.9/site-packages/h5py/_hl/group.py", line 305, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+KeyError: "Unable to open object (object 'aux_temperature' doesn't exist)"
