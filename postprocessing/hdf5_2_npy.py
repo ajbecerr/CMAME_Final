@@ -31,11 +31,11 @@ def compute_cell_centers(cells, vertices, dimensions=-1):
 
 if str(sys.argv[1]) == 'pmma':
     domainFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/domain/*.hdf5')
-    boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/slabboundary/*.hdf5')
+    # boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/slabboundary/*.hdf5')
     boundaryMonitorFiles = glob.glob('../ablateInputs/slabs/_2dSlabPMMA_'+str(sys.argv[2])+'/slabboundary_monitor/*.hdf5')
 else:
     domainFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/domain/*.hdf5')
-    boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/slabboundary/*.hdf5')
+    # boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/slabboundary/*.hdf5')
     boundaryMonitorFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/slabboundary_monitor/*.hdf5')
 
 domainF0 = h5py.File(domainFiles[0], 'r')
@@ -60,11 +60,11 @@ domain = domain[1:]
 
 boundary = np.array([0, 0, 0, 0, 0])
 for file in boundaryMonitorFiles:
-    print(file)
+    # print(file)
     f = h5py.File(file, 'r')
-    print(list(f['time']))
-    print(list(f['fields/slabboundary_monitor']))
-    Rdots = list(f['fields/slabboundary_monitor_regressionRate'][0])
+    # print(list(f['time']))
+    # print(list(f['cell_fields/slabboundary_monitor']))
+    Rdots = list(f['cell_fields/slabboundary_monitor_regressionRate'][0])
     Qtots = list(np.array(f['cell_fields/slabboundary_monitor_conduction'][0]) + np.array(f['cell_fields/slabboundary_monitor_extraRad'][0]) + np.array(f['cell_fields/slabboundary_monitor_radiation'][0]))
     Times = [f['time'][0][0] for i in range(len(boundary_cell_centers))]
     boundary_ij = np.hstack((np.array(list(zip(Times, Rdots, Qtots))), boundary_cell_centers))    
