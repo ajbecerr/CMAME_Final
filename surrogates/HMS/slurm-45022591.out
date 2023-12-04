@@ -1,0 +1,33 @@
+sparseRep_1.py:65: FutureWarning: arrays to stack must be passed as a "sequence" type such as list or tuple. Support for non-sequence iterables such as generators is deprecated as of NumPy 1.16 and will raise an error in the future.
+  Data = np.vstack((boundary for boundary in boundaries))
+sparseRep_1.py:74: RuntimeWarning: divide by zero encountered in double_scalars
+  max_cols = np.diag([1/max(Data[:, i]) for i in range(len(Data[0]))])
+[[5.85712217e-02 8.60000000e-03 1.55402297e+04 ... 6.32475349e+05
+  6.39360520e+00 0.00000000e+00]
+ [6.28194029e-02 8.60000000e-03 1.55402297e+04 ... 6.32475349e+05
+  6.39360520e+00 0.00000000e+00]
+ [6.37000290e-02 8.60000000e-03 1.55402297e+04 ... 6.32475349e+05
+  6.39360520e+00 0.00000000e+00]
+ ...
+ [1.84028445e-02 9.12673192e-04 1.55511258e+04 ... 7.20195736e+05
+  6.89843433e+00 0.00000000e+00]
+ [1.90314074e-02 1.52112199e-03 1.55511258e+04 ... 7.20195736e+05
+  6.89843433e+00 0.00000000e+00]
+ [1.96599704e-02 2.12957078e-03 1.55511258e+04 ... 7.20195736e+05
+  6.89843433e+00 0.00000000e+00]]
+[[0.70590027 1.         0.98425392 ... 0.60404715 0.41521124        nan]
+ [0.75709935 1.         0.98425392 ... 0.60404715 0.41521124        nan]
+ [0.76771265 1.         0.98425392 ... 0.60404715 0.41521124        nan]
+ ...
+ [0.22179105 0.10612479 0.98494404 ... 0.68782473 0.44799568        nan]
+ [0.22936649 0.17687465 0.98494404 ... 0.68782473 0.44799568        nan]
+ [0.23694193 0.24762451 0.98494404 ... 0.68782473 0.44799568        nan]]
+0.00017660906538703958
+Traceback (most recent call last):
+  File "sparseRep_1.py", line 93, in <module>
+    sparse1, Bs1, Cs1, f1, T1, meanerror1 = KfoldCV(Data, 2, eps, maxs)
+  File "/cluster/home/abecer02/CMAME_Final/surrogates/HMS/multiscale_new.py", line 353, in KfoldCV
+    sparse,Bs,Cs,f,T = Multiscale_train(train_d,eps,maxs)
+  File "/cluster/home/abecer02/CMAME_Final/surrogates/HMS/multiscale_new.py", line 276, in Multiscale_train
+    return sparse,Bs,Cs,f,T
+UnboundLocalError: local variable 'sparse' referenced before assignment

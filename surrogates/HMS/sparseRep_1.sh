@@ -8,5 +8,5 @@
 #SBATCH --mail-type=ALL
 ##SBATCH -A sunyb
 #SBATCH --mail-user=alejandro.becerra@tufts.edu
-module load anaconda
-python sparseRep_1.py $1 $2
+module load anaconda/2021.05
+python sparseRep_1.py $1 $2 $3 $4
