@@ -253,9 +253,7 @@ solvers:
       name: boundaryFaces
     processes:
       - !ablate::boundarySolver::physics::Sublimation
-        sublimationModel: !ablate::boundarySolver::physics::subModels::CompleteSublimation
-          solidDensity: 1190.0
-          latentHeatOfFusion: 840890
+        latentHeatOfFusion: 840890
         transportModel: !ablate::eos::transport::Sutherland
           eos: *eos
         pgs: *pgs
@@ -273,6 +271,7 @@ solvers:
             - !ablate::eos::radiationProperties::SootMeanProperties
               eos: *eos
         emissivity: 0.9
+        solidDensity: 1190.0
     monitors:
       - !ablate::monitors::BoundarySolverMonitor
   - !ablate::radiation::VolumeRadiation
