@@ -260,7 +260,7 @@ solvers:
           eos: *eos
         pgs: *pgs
         eos: *eos
-        massFractions: *fuelMassFracW
+        massFractions: *fuelMassFrac
         radiationInterval: 25
         radiation: !ablate::radiation::SurfaceRadiation
           id: surfaceflux
