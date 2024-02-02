@@ -253,14 +253,14 @@ solvers:
       name: boundaryFaces
     processes:
       - !ablate::boundarySolver::physics::Sublimation
-      	sublimationModel: !ablate::boundarySolver::physics::subModels::CompleteSublimation
-           solidDensity: 1190.0
-           latentHeatOfFusion: 840890
+        sublimationModel: !ablate::boundarySolver::physics::subModels::CompleteSublimation
+          solidDensity: 1190.0
+          latentHeatOfFusion: 840890
         transportModel: !ablate::eos::transport::Sutherland
           eos: *eos
         pgs: *pgs
         eos: *eos
-        massFractions: *fuelMassFrac
+        massFractions: *fuelMassFracW
         radiationInterval: 25
         radiation: !ablate::radiation::SurfaceRadiation
           id: surfaceflux
