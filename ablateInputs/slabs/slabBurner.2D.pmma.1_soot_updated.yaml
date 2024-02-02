@@ -254,8 +254,8 @@ solvers:
     processes:
       - !ablate::boundarySolver::physics::Sublimation
       	sublimationModel: !ablate::boundarySolver::physics::subModels::CompleteSublimation
-          solidDensity:  1190.0 
-          latentHeatOfFusion: 840890
+           solidDensity: 1190.0 
+           latentHeatOfFusion: 840890
         transportModel: !ablate::eos::transport::Sutherland
           eos: *eos
         pgs: *pgs
