@@ -38,25 +38,25 @@ else:
     # boundaryFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/slabboundary/*.hdf5')
     boundaryMonitorFiles = glob.glob('../ablateInputs/slabs/_2dSlabParaffin_'+str(sys.argv[2])+'/slabboundary_monitor/*.hdf5')
 
-domainF0 = h5py.File(domainFiles[0], 'r')
-domainCells = list(domainF0['viz/topology/cells'])
-domainVertices = list(domainF0['geometry/vertices'])
-domain_cell_centers = compute_cell_centers(domainCells, domainVertices)
+# domainF0 = h5py.File(domainFiles[0], 'r')
+# domainCells = list(domainF0['viz/topology/cells'])
+# domainVertices = list(domainF0['geometry/vertices'])
+# domain_cell_centers = compute_cell_centers(domainCells, domainVertices)
 
 boundaryF0 = h5py.File(boundaryMonitorFiles[0], 'r')
 boundaryCells = list(boundaryF0['viz/topology/cells'])
 boundaryVertices = list(boundaryF0['geometry/vertices'])
 boundary_cell_centers = compute_cell_centers(boundaryCells, boundaryVertices)
 
-domain = np.array([0, 0, 0, 0, 0])
-for file in domainFiles:
-    f = h5py.File(file, 'r')
-    Temps = list(f['cell_fields/aux_temperature'][0])
-    Vels = list(f['cell_fields/aux_velocity'][0])
-    Times = [f['time'][0][0] for i in range(len(domain_cell_centers))]
-    domain_ij = np.hstack((np.array(list(zip(Times, Temps, Vels)), dtype='object'), domain_cell_centers))
-    domain = np.vstack((domain, domain_ij))
-domain = domain[1:]
+# domain = np.array([0, 0, 0, 0, 0])
+# for file in domainFiles:
+#     f = h5py.File(file, 'r')
+#     Temps = list(f['cell_fields/aux_temperature'][0])
+#     Vels = list(f['cell_fields/aux_velocity'][0])
+#     Times = [f['time'][0][0] for i in range(len(domain_cell_centers))]
+#     domain_ij = np.hstack((np.array(list(zip(Times, Temps, Vels)), dtype='object'), domain_cell_centers))
+#     domain = np.vstack((domain, domain_ij))
+# domain = domain[1:]
 
 boundary = np.array([0, 0, 0, 0, 0])
 for file in boundaryMonitorFiles:
@@ -72,12 +72,12 @@ for file in boundaryMonitorFiles:
 boundary = boundary[1:]
 
 if str(sys.argv[1]) == 'pmma':
-    np.save('../ablateOutputs/domainPMMA_'+str(sys.argv[2])+'.npy', domain)
-    print(domain)
+    # np.save('../ablateOutputs/domainPMMA_'+str(sys.argv[2])+'.npy', domain)
+    # print(domain)
     np.save('../ablateOutputs/boundaryPMMA_'+str(sys.argv[2])+'.npy', boundary)
     print(boundary)
-else:
-    np.save('../ablateOutputs/domainParaffin_'+str(sys.argv[2])+'.npy', domain)
-    print(domain)
-    np.save('../ablateOutputs/boundaryParaffin_'+str(sys.argv[2])+'.npy', boundary)
-    print(boundary)
+# else:
+#     np.save('../ablateOutputs/domainParaffin_'+str(sys.argv[2])+'.npy', domain)
+#     print(domain)
+#     np.save('../ablateOutputs/boundaryParaffin_'+str(sys.argv[2])+'.npy', boundary)
+#     print(boundary)
