@@ -1,3 +1,0 @@
-/p/lustre2/ubchrest/CMAME_Final/ablateOutputs/getQoIs.py:16: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
-  QoIs.append(np.array([Tmean, Vmean, domain_i[j, -2], domain_i[j, -1]]))
-slurmstepd: error: *** JOB 1910461 ON quartz643 CANCELLED AT 2023-12-04T15:01:57 DUE TO TIME LIMIT ***
