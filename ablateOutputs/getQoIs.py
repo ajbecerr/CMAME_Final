@@ -28,9 +28,12 @@ for boundary in boundaries:
     for j in range(92):
         mask_j_k = np.array([k % 92 == j for k in range(len(boundary_i))])
         boundary_i_j_k = boundary_i[mask_j_k, :]
-        Rdotmean = sum(boundary_i_j_k[:, 1])/len(boundary_i_j_k[:, 1])
-        Qtotmean = sum(boundary_i_j_k[:, 2])/len(boundary_i_j_k[:, 2])
-        QoIs.append(np.array([Rdotmean, Qtotmean, boundary_i[j, -2], boundary_i[j, -1]]))
+        # Rdotmean = sum(boundary_i_j_k[:, 1])/len(boundary_i_j_k[:, 1])
+        # Qtotmean = sum(boundary_i_j_k[:, 2])/len(boundary_i_j_k[:, 2])
+        # QoIs.append(np.array([Rdotmean, Qtotmean, boundary_i[j, -2], boundary_i[j, -1]]))
+        Rdotmax = max(boundary_i_j_k[:, 1])
+        Qtotmax = max(boundary_i_j_k[:, 2])
+        QoIs.append(np.array([Rdotmax, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
 
     print(np.array(QoIs))
     np.save(boundary.split('_')[0]+'_'+str(i)+'_B.npy', np.array(QoIs))
