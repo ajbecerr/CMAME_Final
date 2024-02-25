@@ -10,6 +10,13 @@ maxs = int(sys.argv[1])
 delta = float(sys.argv[2])
 qoi = str(sys.argv[3])
 fuel = str(sys.argv[4])
+dropout = str(sys.argv[5])
+
+print(maxs)
+print(delta)
+print(qoi)
+print(fuel)
+print(dropout)
 
 # Data = np.load('../../ablateOutputs/all_domains.npy')
 # domains = glob.glob('../../ablateOutputs/domainParaffin_*_B.npy')
@@ -77,36 +84,42 @@ fuel = str(sys.argv[4])
 
 ###
 
-# Data = pd.read_csv('droplet_data.csv')
+Data = pd.read_csv('PMMAboundary_GASP_'+dropout+'_train.csv')
 # Data = Data.dropna()
-# Data = Data.to_numpy()
-# Data = np.hstack((Data[:, :3], Data[:, -1].reshape(-1, 1))).astype(float)
-# print(Data)
-# max_cols = np.diag([1/max(Data[:, i]) for i in range(len(Data[0]))])
-# Data = np.matmul(Data, max_cols)
-# print(Data)
+Data = Data.to_numpy()
+if qoi == 'rdot':
+    Data = np.hstack((Data[:, 3:-1], Data[:, 1].reshape(-1, 1))).astype(float)
+else:
+    Data = np.hstack((Data[:, 3:-1], Data[:, 2].reshape(-1, 1))).astype(float)
+max_cols = np.diag([1/max(Data[:, i]) for i in range(len(Data[0]))])
+Data = np.matmul(Data, max_cols)
+print(Data)
+print(len(Data))
 
 eps = epsilon_0(Data, maxs, delta)
 delta = str(delta)
 print(eps)
 
 sparse1, Bs1, Cs1, f1, T1, meanerror1 = KfoldCV(Data, 2, eps, maxs)
+np.save('sparse_'+'_'+delta+'_'+qoi+'_'+dropout+'.npy', sparse1)
+np.save('Cs_'+'_'+delta+'_'+qoi+'_'+dropout+'.npy', Cs1)
+np.save('T_'+'_'+delta+'_'+qoi+'_'+dropout+'.npy', T1)
 
 scales = sorted(set(sparse1[:, -1]))
 data3 = []
 for ss in range(maxs+1):
     ind = np.where(sparse1[:, -1] <= ss)[0]
     Bs = Bs1[:, ind]
-    np.save('B_'+str(ss)+'_'+delta+'_'+qoi+'_'+fuel+'.npy', Bs)
+    # np.save('B_'+str(ss)+'_'+delta+'_'+qoi+'_'+dropout+'.npy', Bs)
     # np.save('B_'+str(ss)+'.npy', Bs)
     print(Bs)
     Cs = Cs1[ind]
-    np.save('C_'+str(ss)+'_'+delta+'_'+qoi+'_'+fuel+'.npy', Cs)
+    # np.save('C_'+str(ss)+'_'+delta+'_'+qoi+'_'+dropout+'.npy', Cs)
     # np.save('C_'+str(ss)+'.npy', Cs)
     print(Cs)
     proj = Bs.dot(Cs)
     mse = mean_squared_error(Data[:, -1], proj)
     data3.append([Bs.shape[1]/Bs.shape[0], mse])
 data3 = np.array(data3)
-np.save('MSE_'+delta+'_'+qoi+'.npy', data3)
+np.save('MSE_'+delta+'_'+qoi+'_'+dropout+'.npy', data3)
 print(data3)

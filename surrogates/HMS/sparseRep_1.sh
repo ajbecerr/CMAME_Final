@@ -9,4 +9,4 @@
 ##SBATCH -A sunyb
 #SBATCH --mail-user=alejandro.becerra@tufts.edu
 module load anaconda/2021.05
-python sparseRep_1.py $1 $2 $3 $4
+python sparseRep_1.py $1 $2 $3 $4 $5
