@@ -1,4 +1,6 @@
 surrogates/HMS/*.npy
+surrogates/HMS/.ipynb_checkpoints/
+surrogates/HMS/__pycache__/
 ablateInputs/slabs/_*/*
 ablateInputs/slabs/*.out
 ablateInputs/0dIgnition/_ignitionDelayPentane/*
