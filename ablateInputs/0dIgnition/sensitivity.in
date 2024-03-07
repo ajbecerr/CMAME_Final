@@ -6,14 +6,10 @@ method,
     samples = 500 # samples = 1000
     variance_based_decomp
 variables,
-  uniform_uncertain 12
-    upper_bounds      6.06     10.4     6.21     4.70
-    lower_bounds      4.04     6.94     4.14     3.14
-    descriptors 'E2' 'E3' 'E4' 'E5' 'A2' 'A3' 'A4' 'A5' 'b2' 'b3' 'b4' 'b5'
-#  uniform_uncertain 10
-#    upper_bounds      1.25     7.70     1.20     2.23      4.21     3.05      1.80     9.60     8.40     3.36
-#    lower_bounds      0.83     5.14     0.80     1.49      2.81     2.03      1.20     6.40     5.60     2.24
-#    descriptors 'A1' 'A2' 'A3' 'A4' 'b2' 'b4' 'E1' 'E2' 'E3' 'E4'
+ uniform_uncertain 10
+    upper_bounds      1.25     7.70     1.20     2.23      4.21     3.05      1.80     9.60     8.40     3.36
+    lower_bounds      0.83     5.14     0.80     1.49      2.81     2.03      1.20     6.40     5.60     2.24
+    descriptors 'A1' 'A2' 'A3' 'A4' 'b2' 'b4' 'E1' 'E2' 'E3' 'E4'
 interface,
         fork
         analysis_drivers = 'python driver.py params.in results.out'
