@@ -1,0 +1,41 @@
+6
+5e-05
+qtot
+MMA
+sample
+[[0.70590027 1.         0.98737823 ... 0.76488178 0.68129824 0.07521539]
+ [0.75709935 1.         0.98737823 ... 0.76488178 0.68129824 0.07508044]
+ [0.76771265 1.         0.98737823 ... 0.76488178 0.68129824 0.07359666]
+ ...
+ [0.22179105 0.10612479 0.98494404 ... 0.68782473 0.44799568 0.        ]
+ [0.22936649 0.17687465 0.98494404 ... 0.68782473 0.44799568 0.01695888]
+ [0.23694193 0.24762451 0.98494404 ... 0.68782473 0.44799568 0.04878838]]
+4784
+2.297650451729859e-06
+1
+2
+[[0.4040412  0.76143254 0.28762726 ... 0.35224813 0.72193909 0.82509494]
+ [0.41404744 0.7331105  0.2743856  ... 0.36097169 0.73981807 0.83852919]
+ [0.41590964 0.72694816 0.27155933 ... 0.36259518 0.74314542 0.84085033]
+ ...
+ [0.52427295 0.36179167 0.83532341 ... 0.45799465 0.34433943 0.25420281]
+ [0.52340402 0.40201867 0.82411016 ... 0.45723557 0.37621057 0.28583977]
+ [0.51784971 0.44271164 0.8057549  ... 0.45238343 0.40734493 0.31853125]]
+[-9.83199709e+154 -8.10500134e+153              nan ...  1.13223081e+004
+ -6.26049509e+003 -2.13958340e+001]
+Traceback (most recent call last):
+  File "sparseRep_1.py", line 121, in <module>
+    mse = mean_squared_error(Data[:, -1], proj)
+  File "/cluster/tufts/hpc/tools/anaconda/202105/lib/python3.8/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/cluster/tufts/hpc/tools/anaconda/202105/lib/python3.8/site-packages/sklearn/metrics/_regression.py", line 335, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "/cluster/tufts/hpc/tools/anaconda/202105/lib/python3.8/site-packages/sklearn/metrics/_regression.py", line 90, in _check_reg_targets
+    y_pred = check_array(y_pred, ensure_2d=False, dtype=dtype)
+  File "/cluster/tufts/hpc/tools/anaconda/202105/lib/python3.8/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/cluster/tufts/hpc/tools/anaconda/202105/lib/python3.8/site-packages/sklearn/utils/validation.py", line 663, in check_array
+    _assert_all_finite(array,
+  File "/cluster/tufts/hpc/tools/anaconda/202105/lib/python3.8/site-packages/sklearn/utils/validation.py", line 103, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
