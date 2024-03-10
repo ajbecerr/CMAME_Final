@@ -8,9 +8,10 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=72:00:00
+#SBATCH --mail-user=ajbecerr@buffalo.edu
+#SBATCH --mail-type=ALL
 
-# newgrp grp-danialfa
-
+module load ccrsoft/legacy
 module load intel/19.5 && \
 module load intel-mpi/2019.5 && \
 export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so && \

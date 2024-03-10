@@ -1,0 +1,15 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"intel/19.5"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "intel/19.5"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+slurmstepd: error: execve(): dakota: No such file or directory
+srun: error: cpn-q08-35-01: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=15157376.0
