@@ -1,0 +1,130 @@
+--------------------------------------------------------------------------------------------------------------
+QUESO Library: Version = 0.56.0 (0)
+
+Development Build
+
+Build Date   = Apr 13 2020 14:49:36
+Build Host   = srv-p22-12.cbls.ccr.buffalo.edu
+Build User   = anonymous
+Build Arch   = x86_64
+Build Rev    = v0.58.0-release (469911a)
+
+C++ Config   = /usr/bin/c++ 
+
+Trilinos DIR = N/A
+GSL Libs     = 
+GRVY DIR     = N/A
+GLPK DIR     = N/A
+HDF5 DIR     = N/A
+--------------------------------------------------------------------------------------------------------------
+Beginning run at Tue Jan  9 10:09:07 2024
+
+Entering StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = , alternativeOptionsValues = 0x1d05110, m_env.optionsInputFileName() = 
+Leaving StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = ip_
+In StatisticalInverseProblem<P_V,P_M>::solveWithBayesMetropolisHastings(): computing solution, as requested by user
+Entering MetropolisHastingsSG<P_V,P_M>::constructor(1): prefix = ip_, alternativeOptionsValues = 0x1d26620, m_env.optionsInputFileName() = , m_initialProposalCovMatrix = 0.75 
+Entering MetropolisHastingsSG<P_V,P_M>::commonConstructor()
+Leaving MetropolisHastingsSG<P_V,P_M>::constructor(1)
+Starting the generation of Markov chain rawChain, with 20000 positions...
+
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): contents of initial position are:9.5 
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): targetPdf.domaintSet() info is:In BoxSubset<V,M>::print(): minValues = 8 , maxValues = 11 , m_volume = 3
+
+Finished generating 500 positions, current rejection percentage = 10.2 %
+Finished generating 1000 positions, current rejection percentage = 8.9 %
+Finished generating 1500 positions, current rejection percentage = 9.2 %
+Finished generating 2000 positions, current rejection percentage = 8.55 %
+Finished generating 2500 positions, current rejection percentage = 8.04 %
+Finished generating 3000 positions, current rejection percentage = 7.9 %
+Finished generating 3500 positions, current rejection percentage = 7.8 %
+Finished generating 4000 positions, current rejection percentage = 7.9 %
+Finished generating 4500 positions, current rejection percentage = 7.77778 %
+Finished generating 5000 positions, current rejection percentage = 7.58 %
+Finished generating 5500 positions, current rejection percentage = 7.49091 %
+Finished generating 6000 positions, current rejection percentage = 7.25 %
+Finished generating 6500 positions, current rejection percentage = 7.18462 %
+Finished generating 7000 positions, current rejection percentage = 7.07143 %
+Finished generating 7500 positions, current rejection percentage = 7.09333 %
+Finished generating 8000 positions, current rejection percentage = 7.1 %
+Finished generating 8500 positions, current rejection percentage = 7.04706 %
+Finished generating 9000 positions, current rejection percentage = 7.01111 %
+Finished generating 9500 positions, current rejection percentage = 7.03158 %
+Finished generating 10000 positions, current rejection percentage = 7.08 %
+Finished generating 10500 positions, current rejection percentage = 7.07619 %
+Finished generating 11000 positions, current rejection percentage = 6.95455 %
+Finished generating 11500 positions, current rejection percentage = 6.84348 %
+Finished generating 12000 positions, current rejection percentage = 6.8 %
+Finished generating 12500 positions, current rejection percentage = 6.792 %
+Finished generating 13000 positions, current rejection percentage = 6.80769 %
+Finished generating 13500 positions, current rejection percentage = 6.80741 %
+Finished generating 14000 positions, current rejection percentage = 6.76429 %
+Finished generating 14500 positions, current rejection percentage = 6.74483 %
+Finished generating 15000 positions, current rejection percentage = 6.79333 %
+Finished generating 15500 positions, current rejection percentage = 6.7871 %
+Finished generating 16000 positions, current rejection percentage = 6.7625 %
+Finished generating 16500 positions, current rejection percentage = 6.75152 %
+Finished generating 17000 positions, current rejection percentage = 6.74706 %
+Finished generating 17500 positions, current rejection percentage = 6.75429 %
+Finished generating 18000 positions, current rejection percentage = 6.75556 %
+Finished generating 18500 positions, current rejection percentage = 6.7027 %
+Finished generating 19000 positions, current rejection percentage = 6.65263 %
+Finished generating 19500 positions, current rejection percentage = 6.61026 %
+Finished generating 20000 positions, current rejection percentage = 6.61 %
+Finished the generation of Markov chain rawChain, with sub 20000 positions
+Some information about this chain:
+  Chain run time       = 29051.4 seconds
+
+ Breaking of the chain run time:
+
+  Candidate run time   = 0.385235 seconds (0.00132605%)
+  Num target calls  = 29048
+  Target d. run time   = 29049 seconds (99.9917%)
+  Avg target run time   = 1.00003 seconds
+  Mh alpha run time    = 0.252509 seconds (0.00086918%)
+  Dr alpha run time    = 0.457168 seconds (0.00157365%)
+----------------------   --------------
+  Sum                  = 29050.1 seconds (99.9955%)
+
+ Other run times:
+  DR run time          = 9020.31 seconds (31.0495%)
+  AM run time          = 0.223018 seconds (0.000767667%)
+  Number of DRs = 9048(num_DRs/chain_size = 0.4524)
+  Out of target support in DR = 0
+  Rejection percentage = 6.61 %
+  Out of target support percentage = 0 %
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , chain name = rawChain: about to try to open generic output file 'QuesoDiagnostics/mh_output.m', subId = 0, subenv is allowed to write (1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: returned from opening generic output file 'QuesoDiagnostics/mh_output.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: about to try to write raw sub chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0, subenv is allowed to write  1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just wrote (per period request) remaining 20000 chain positions , 0 <= pos <= 19999
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 20000, this->subSequenceSize = 20000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawSubMLEvalue = 12.4272, rawSubMLEpositions.subSequenceSize() = 1, rawSubMLEpositions[0] = 9.75499 
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 20000, this->subSequenceSize = 20000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawSubMAPvalue = 11.3286, rawSubMAPpositions.subSequenceSize() = 1, rawSubMAPpositions[0] = 9.75499 
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: returned from writing raw sub chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: about to try to write raw unified chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: returned from writing raw unified chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 20000, this->subSequenceSize = 20000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawUnifiedMLEvalue = 12.4272, rawUnifiedMLEpositions.subSequenceSize() = 1, rawUnifiedMLEpositions[0] = 9.75499 
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 20000, this->subSequenceSize = 20000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawUnifiedMAPvalue = 11.3286, rawUnifiedMAPpositions.subSequenceSize() = 1, rawUnifiedMAPpositions[0] = 9.75499 
+
+
+-----------------------------------------------------
+ Writing more information about the Markov chain rawChain to output file ...
+-----------------------------------------------------
+
+
+-----------------------------------------------------
+ Finished writing more information about the Markov chain rawChain
+-----------------------------------------------------
+
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = : closed generic output file 'QuesoDiagnostics/mh_output' (chain name is rawChain)
+
+In SequentialVectorRealizer<V,M>::constructor(): m_chain.subSequenceSize() = 20000
+
+Ending run at Tue Jan  9 18:13:20 2024
+Total run time = 29053 seconds

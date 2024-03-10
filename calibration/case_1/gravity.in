@@ -1,0 +1,40 @@
+environment,
+    tabular_data
+
+method,
+  bayes_calibration queso
+    chain_samples = 20000  
+        burn_in = 4000  
+    dram
+chain_diagnostics
+output debug
+
+
+variables,
+  uniform_uncertain 1
+    upper_bounds  11
+    lower_bounds 8
+    descriptors 'x1'
+
+
+interface,
+        fork
+        batch
+        analysis_drivers = 'python3 driver.py params.in results.out'
+        parameters_file = 'params.in'
+        results_file    = 'results.out'
+        verbatim
+
+
+responses,
+  calibration_terms = 1    
+
+  field_calibration_terms = 1
+  lengths = 14
+  num_coordinates_per_field 1
+
+  calibration_data
+  variance_type = 'diagonal'
+  descriptors = 'CURVE1'
+  no_gradients
+  no_hessians
