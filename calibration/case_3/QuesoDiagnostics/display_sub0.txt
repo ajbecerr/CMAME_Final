@@ -1,0 +1,32 @@
+--------------------------------------------------------------------------------------------------------------
+QUESO Library: Version = 0.56.0 (0)
+
+Development Build
+
+Build Date   = Apr 13 2020 14:49:36
+Build Host   = srv-p22-12.cbls.ccr.buffalo.edu
+Build User   = anonymous
+Build Arch   = x86_64
+Build Rev    = v0.58.0-release (469911a)
+
+C++ Config   = /usr/bin/c++ 
+
+Trilinos DIR = N/A
+GSL Libs     = 
+GRVY DIR     = N/A
+GLPK DIR     = N/A
+HDF5 DIR     = N/A
+--------------------------------------------------------------------------------------------------------------
+Beginning run at Sat Mar  9 23:20:54 2024
+
+Entering StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = , alternativeOptionsValues = 0x691990, m_env.optionsInputFileName() = 
+Leaving StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = ip_
+In StatisticalInverseProblem<P_V,P_M>::solveWithBayesMetropolisHastings(): computing solution, as requested by user
+Entering MetropolisHastingsSG<P_V,P_M>::constructor(1): prefix = ip_, alternativeOptionsValues = 0x6bc2d0, m_env.optionsInputFileName() = , m_initialProposalCovMatrix = 1.46301 
+Entering MetropolisHastingsSG<P_V,P_M>::commonConstructor()
+Leaving MetropolisHastingsSG<P_V,P_M>::constructor(1)
+Starting the generation of Markov chain rawChain, with 20000 positions...
+
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): contents of initial position are:8.405 
+In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): targetPdf.domaintSet() info is:In BoxSubset<V,M>::print(): minValues = 6.31 , maxValues = 10.5 , m_volume = 4.19
+

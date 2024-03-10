@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import dakota.interfacing as di
+import glob
 from multiscale_new import *
 import numpy as np
 import pandas as pd
@@ -30,6 +31,10 @@ else:
     Data = np.hstack((Data[:, 3:-1], Data[:, 2].reshape(-1, 1))).astype(float)
     
 max_cols = np.diag([1/max(Data[:, i]) for i in range(len(Data[0]))])
+
+Cs = glob.glob('Cs*.npy')
+sparse = glob.glob('sparse*.npy')
+T = glob.glob('T*.npy')
 
 Cs = np.load(Cs[j])
 sparse = np.load(sparse[j])
