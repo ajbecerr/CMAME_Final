@@ -53,6 +53,8 @@ def y(x):
 m_height = np.zeros_like(d_height)
 for i, x in enumerate(d_height):
     m_height[i] = predict(np.matmul(np.array([[x, y(x), E1, E257, E250, b249, Lv, v]]), max_cols[:-1, :-1]), sparse, T, Cs)
+    m_height[i] = m_height[i]*max_cols[-1, -1]
+    print(m_height[i])
 
 #-----------------------------------------------------------------
 for i, r in enumerate(results.responses()):

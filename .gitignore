@@ -1,3 +1,4 @@
+calibration/case_*/*
 surrogates/HMS/*.npy
 surrogates/HMS/.ipynb_checkpoints/
 surrogates/HMS/__pycache__/

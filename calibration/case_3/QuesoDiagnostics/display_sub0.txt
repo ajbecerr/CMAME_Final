@@ -17,16 +17,82 @@ GRVY DIR     = N/A
 GLPK DIR     = N/A
 HDF5 DIR     = N/A
 --------------------------------------------------------------------------------------------------------------
-Beginning run at Sat Mar  9 23:20:54 2024
+Beginning run at Wed Mar 13 23:46:08 2024
 
-Entering StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = , alternativeOptionsValues = 0x691990, m_env.optionsInputFileName() = 
+Entering StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = , alternativeOptionsValues = 0x1f24990, m_env.optionsInputFileName() = 
 Leaving StatisticalInverseProblem<P_V,P_M>::constructor(): prefix = ip_
 In StatisticalInverseProblem<P_V,P_M>::solveWithBayesMetropolisHastings(): computing solution, as requested by user
-Entering MetropolisHastingsSG<P_V,P_M>::constructor(1): prefix = ip_, alternativeOptionsValues = 0x6bc2d0, m_env.optionsInputFileName() = , m_initialProposalCovMatrix = 1.46301 
+Entering MetropolisHastingsSG<P_V,P_M>::constructor(1): prefix = ip_, alternativeOptionsValues = 0x1f4f2d0, m_env.optionsInputFileName() = , m_initialProposalCovMatrix = 1.46301 
 Entering MetropolisHastingsSG<P_V,P_M>::commonConstructor()
 Leaving MetropolisHastingsSG<P_V,P_M>::constructor(1)
-Starting the generation of Markov chain rawChain, with 20000 positions...
+Starting the generation of Markov chain rawChain, with 4000 positions...
 
 In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): contents of initial position are:8.405 
 In MetropolisHastingsSG<P_V,P_M>::generateFullChain(): targetPdf.domaintSet() info is:In BoxSubset<V,M>::print(): minValues = 6.31 , maxValues = 10.5 , m_volume = 4.19
 
+Finished generating 500 positions, current rejection percentage = 98.4 %
+Finished generating 1000 positions, current rejection percentage = 98.9 %
+Finished generating 1500 positions, current rejection percentage = 99.2667 %
+Finished generating 2000 positions, current rejection percentage = 99.45 %
+Finished generating 2500 positions, current rejection percentage = 99.56 %
+Finished generating 3000 positions, current rejection percentage = 99.6333 %
+Finished generating 3500 positions, current rejection percentage = 99.6857 %
+Finished generating 4000 positions, current rejection percentage = 99.7 %
+Finished the generation of Markov chain rawChain, with sub 4000 positions
+Some information about this chain:
+  Chain run time       = 68293.2 seconds
+
+ Breaking of the chain run time:
+
+  Candidate run time   = 0.208644 seconds (0.000305512%)
+  Num target calls  = 7993
+  Target d. run time   = 68292 seconds (99.9983%)
+  Avg target run time   = 8.54398 seconds
+  Mh alpha run time    = 0.074527 seconds (0.000109128%)
+  Dr alpha run time    = 0.318526 seconds (0.00046641%)
+----------------------   --------------
+  Sum                  = 68292.6 seconds (99.9992%)
+
+ Other run times:
+  DR run time          = 34139.7 seconds (49.9898%)
+  AM run time          = 0.06338 seconds (9.28057e-05%)
+  Number of DRs = 3993(num_DRs/chain_size = 0.99825)
+  Out of target support in DR = 0
+  Rejection percentage = 99.7 %
+  Out of target support percentage = 0 %
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , chain name = rawChain: about to try to open generic output file 'QuesoDiagnostics/mh_output.m', subId = 0, subenv is allowed to write (1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: returned from opening generic output file 'QuesoDiagnostics/mh_output.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: about to try to write raw sub chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0, subenv is allowed to write  1/true or 0/false) = 1...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just wrote (per period request) remaining 4000 chain positions , 0 <= pos <= 3999
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 4000, this->subSequenceSize = 4000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawSubMLEvalue = -1.10437e+11, rawSubMLEpositions.subSequenceSize() = 128, rawSubMLEpositions[0] = 10.5 
+Entering BaseVectorSequence<V,M>::subPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 4000, this->subSequenceSize = 4000
+Leaving BaseVectorSequence<V,M>::subPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawSubMAPvalue = -1.10437e+11, rawSubMAPpositions.subSequenceSize() = 128, rawSubMAPpositions[0] = 10.5 
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: returned from writing raw sub chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: about to try to write raw unified chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0...
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = , raw chain name = rawChain: returned from writing raw unified chain output file 'QuesoDiagnostics/raw_chain.m', subId = 0
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 4000, this->subSequenceSize = 4000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MLE, rawUnifiedMLEvalue = -1.10437e+11, rawUnifiedMLEpositions.subSequenceSize() = 128, rawUnifiedMLEpositions[0] = 10.5 
+Entering BaseVectorSequence<V,M>::unifiedPositionsOfMaximum(): subCorrespondingScalarValues,subSequenceSize() = 4000, this->subSequenceSize = 4000
+Leaving BaseVectorSequence<V,M>::unifiedPositionsOfMaximum()
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(): just computed MAP, rawUnifiedMAPvalue = -1.10437e+11, rawUnifiedMAPpositions.subSequenceSize() = 128, rawUnifiedMAPpositions[0] = 10.5 
+
+
+-----------------------------------------------------
+ Writing more information about the Markov chain rawChain to output file ...
+-----------------------------------------------------
+
+
+-----------------------------------------------------
+ Finished writing more information about the Markov chain rawChain
+-----------------------------------------------------
+
+In MetropolisHastingsSG<P_V,P_M>::generateSequence(), prefix = : closed generic output file 'QuesoDiagnostics/mh_output' (chain name is rawChain)
+
+In SequentialVectorRealizer<V,M>::constructor(): m_chain.subSequenceSize() = 4000
+
+Ending run at Thu Mar 14 18:44:23 2024
+Total run time = 68295 seconds

@@ -3,7 +3,7 @@ environment,
 
 method,
   bayes_calibration queso
-    chain_samples = 20000    
+    chain_samples = 4000    
     dram
 chain_diagnostics
 output debug

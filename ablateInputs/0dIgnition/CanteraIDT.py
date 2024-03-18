@@ -17,7 +17,7 @@ plt.rcParams["figure.dpi"] = 120
 
 plt.style.use("ggplot")
 
-gas = ct.Solution("../mechs/chem-MMA-134S1488R.yaml")
+gas = ct.Solution("MMA_temp.yaml")
 
 # Define the reactor temperature and pressure
 reactor_temperature = 1200  # Kelvin
@@ -73,7 +73,10 @@ print(f"Computed Ignition Delay: {tau:.3e} seconds. Took {t1-t0:3.2f}s to comput
 
 # If you want to save all the data - molefractions, temperature, pressure, etc
 # uncomment the next line
-time_history.to_csv("time_history.csv")
+# time_history.to_csv("time_history.csv")
+predictFile = open('ignitionDelay134.txt', "w")
+predictFile.write(str(tau))
+predictFile.close()
 
 # plt.figure()
 # plt.plot(time_history.t, time_history(reference_species).Y, "-o")
