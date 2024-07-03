@@ -34,7 +34,8 @@ for boundary in boundaries:
         # Rdotmax = max(boundary_i_j_k[:, 1])
         Qtotmax = max(boundary_i_j_k[:, 2])
         # QoIs.append(np.array([Rdotmax, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
-        MEANtotalR = np.sum(boundary_i_j_k[:, 1])/np.max(boundary_i_j_k[:, 0])
+        dts = [boundary_i_j_k[:l+1, 0] - boundary_i_j_k[:l, 0] for l in range(len(boundary_i_j_k[:l, 0]))]
+        MEANtotalR = np.mean([np.dot(dts[:l], boundary_i_j_k[:l, 1]) for l in range(1, len(dts))])
         QoIs.append(np.array([MEANtotalR, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
 
     print(np.array(QoIs))
