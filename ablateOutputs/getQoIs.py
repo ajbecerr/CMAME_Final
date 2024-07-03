@@ -31,9 +31,11 @@ for boundary in boundaries:
         # Rdotmean = sum(boundary_i_j_k[:, 1])/len(boundary_i_j_k[:, 1])
         # Qtotmean = sum(boundary_i_j_k[:, 2])/len(boundary_i_j_k[:, 2])
         # QoIs.append(np.array([Rdotmean, Qtotmean, boundary_i[j, -2], boundary_i[j, -1]]))
-        Rdotmax = max(boundary_i_j_k[:, 1])
+        # Rdotmax = max(boundary_i_j_k[:, 1])
         Qtotmax = max(boundary_i_j_k[:, 2])
-        QoIs.append(np.array([Rdotmax, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
+        # QoIs.append(np.array([Rdotmax, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
+        MEANtotalR = np.mean(np.array([np.dot(boundary_i_j_k[:l, 0], boundary_i_j_k[:l, 1]) for l in range(1, len(boundary_i_j_k))]))
+        QoIs.append(np.array([MEANtotalR, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
 
     print(np.array(QoIs))
     np.save(boundary.split('_')[0]+'_'+str(i)+'_B.npy', np.array(QoIs))
