@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/p/lustre2/ubchrest/CMAME_Final/ablateOutputs/getQoIs.py", line 37, in <module>
+    dts = [boundary_i_j_k[l+1, 0] - boundary_i_j_k[l, 0] for l in range(len(boundary_i_j_k[:, 0]))]
+  File "/p/lustre2/ubchrest/CMAME_Final/ablateOutputs/getQoIs.py", line 37, in <listcomp>
+    dts = [boundary_i_j_k[l+1, 0] - boundary_i_j_k[l, 0] for l in range(len(boundary_i_j_k[:, 0]))]
+IndexError: index 277 is out of bounds for axis 0 with size 277
