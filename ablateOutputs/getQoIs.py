@@ -27,7 +27,7 @@ for boundary in boundaries:
     i = int(boundary.split('_')[1].split('.')[0])
     boundary_i = np.array(pd.DataFrame(boundary_i).dropna())
     # print(boundary_i)
-    # QoIs = []
+    QoIs = []
     for j in range(92):
         mask_j_k = np.array([k % 92 == j for k in range(len(boundary_i))])
         boundary_i_j_k = boundary_i[mask_j_k, :]
