@@ -23,26 +23,26 @@ boundaries = glob.glob('boundary*.npy')
 
 for boundary in boundaries:
     boundary_i = np.load(boundary, allow_pickle=True)
-    print(boundary_i)
+    # print(boundary_i)
     i = int(boundary.split('_')[1].split('.')[0])
     boundary_i = np.array(pd.DataFrame(boundary_i).dropna())
-    print(boundary_i)
+    # print(boundary_i)
     # QoIs = []
-    # for j in range(92):
-    #     mask_j_k = np.array([k % 92 == j for k in range(len(boundary_i))])
-    #     boundary_i_j_k = boundary_i[mask_j_k, :]
+    for j in range(92):
+        mask_j_k = np.array([k % 92 == j for k in range(len(boundary_i))])
+        boundary_i_j_k = boundary_i[mask_j_k, :]
         # print(boundary_i_j_k)
         # boundary_i_j_k = boundary_i_j_k[~np.isnan(boundary_i_j_k).any(axis=1)]
         # Rdotmean = sum(boundary_i_j_k[:, 1])/len(boundary_i_j_k[:, 1])
         # Qtotmean = sum(boundary_i_j_k[:, 2])/len(boundary_i_j_k[:, 2])
         # QoIs.append(np.array([Rdotmean, Qtotmean, boundary_i[j, -2], boundary_i[j, -1]]))
         # Rdotmax = max(boundary_i_j_k[:, 1])
-        # Qtotmax = max(boundary_i_j_k[:, 2])
+        Qtotmax = max(boundary_i_j_k[:, 2])
         # QoIs.append(np.array([Rdotmax, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
-        # dts = [boundary_i_j_k[l+1, 0] - boundary_i_j_k[l, 0] for l in range(len(boundary_i_j_k[:, 0])-1)]
+        dts = [boundary_i_j_k[l+1, 0] - boundary_i_j_k[l, 0] for l in range(len(boundary_i_j_k[:, 0])-1)]
         # print(dts)
-        # MEANtotalR = np.mean([np.dot(dts[:l], boundary_i_j_k[:l, 1]) for l in range(1, len(dts))])
-        # QoIs.append(np.array([MEANtotalR, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
+        MEANtotalR = np.mean([np.dot(dts[:l], boundary_i_j_k[:l, 1]) for l in range(1, len(dts))])
+        QoIs.append(np.array([MEANtotalR, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
 
-    # print(np.array(QoIs))
-    # np.save(boundary.split('_')[0]+'_'+str(i)+'_B.npy', np.array(QoIs))
+    print(np.array(QoIs))
+    np.save(boundary.split('_')[0]+'_'+str(i)+'_B.npy', np.array(QoIs))
