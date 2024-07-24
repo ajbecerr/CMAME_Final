@@ -1,0 +1,4 @@
+  File "/p/lustre2/ubchrest/CMAME_Final/ablateOutputs/getQoIs.py", line 39
+    print(dts)
+    ^
+SyntaxError: invalid syntax

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/p/lustre2/ubchrest/CMAME_Final/ablateOutputs/getQoIs.py", line 45, in <module>
+    QoIs.append(np.array([MEANtotalR, Qtotmax, boundary_i[j, -2], boundary_i[j, -1]]))
+NameError: name 'QoIs' is not defined

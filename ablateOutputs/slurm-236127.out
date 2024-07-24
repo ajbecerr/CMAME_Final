@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/p/lustre2/ubchrest/CMAME_Final/ablateOutputs/getQoIs.py", line 27, in <module>
+    boundary_i = boundary_i[~np.isnan(boundary_i).any(axis=0)]
+IndexError: boolean index did not match indexed array along dimension 0; dimension is 25484 but corresponding boolean dimension is 5

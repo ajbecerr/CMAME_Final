@@ -1,0 +1,22 @@
+environment,
+    tabular_data
+method,
+  sampling
+    sample_type lhs
+    samples = 500
+    variance_based_decomp
+variables,
+uniform_uncertain 6
+  upper_bounds      1.80     9.60      8.40     3.05      10.5     15.4
+  lower_bounds      1.20     6.40      5.60     2.03      6.31     3.90
+  descriptors 'E1' 'E257' 'E250' 'b249' 'Lv' 'v'
+interface,
+        fork
+        analysis_drivers = 'python driver.py params.in results.out'
+        parameters_file = 'params.in'
+        results_file    = 'results.out'
+        verbatim
+responses,
+	response_functions = 1
+	no_gradients
+	no_hessians

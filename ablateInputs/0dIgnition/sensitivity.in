@@ -3,13 +3,17 @@ environment,
 method,
   sampling
     sample_type lhs
-    samples = 500 # samples = 1000
+    samples = 800 # samples = 1000
     variance_based_decomp
 variables,
- uniform_uncertain 10
-    upper_bounds      1.25     7.70     1.20     2.23      4.21     3.05      1.80     9.60     8.40     3.36
-    lower_bounds      0.83     5.14     0.80     1.49      2.81     2.03      1.20     6.40     5.60     2.24
-    descriptors 'A1' 'A2' 'A3' 'A4' 'b2' 'b4' 'E1' 'E2' 'E3' 'E4'
+#  uniform_uncertain 10
+#     upper_bounds      1.25     7.70     1.20     2.23      4.21     3.05      1.80     9.60     8.40     3.36
+#     lower_bounds      0.83     5.14     0.80     1.49      2.81     2.03      1.20     6.40     5.60     2.24
+#     descriptors 'A1' 'A2' 'A3' 'A4' 'b2' 'b4' 'E1' 'E2' 'E3' 'E4'
+ uniform_uncertain 3
+    upper_bounds      9.01     3.49     8.11
+    lower_bounds      6.01     2.33     5.41
+    descriptors 'A1' 'b1' 'E1'
 interface,
         fork
         analysis_drivers = 'python driver.py params.in results.out'
