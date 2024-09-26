@@ -3,8 +3,8 @@
 #SBATCH -J 2dSlab
 #SBATCH -t 24:00:00
 #SBATCH -p patralab
-#SBATCH --gres=gpu:0
-#SBATCH --mem=1000g
+##SBATCH --gres=gpu:0
+#SBATCH --mem=300g
 #SBATCH --mail-type=ALL
 ##SBATCH -A sunyb
 #SBATCH --mail-user=alejandro.becerra@tufts.edu

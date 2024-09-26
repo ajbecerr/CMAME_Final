@@ -84,9 +84,10 @@ print(dropout)
 
 ###
 
-Data = pd.read_csv('PMMAboundary_GASP_'+dropout+'_train.csv')
-# Data = Data.dropna()
-Data = Data.to_numpy()
+# Data = pd.read_csv('PMMAboundary_GASP_'+dropout+'_train.csv')
+# # Data = Data.dropna()
+# Data = Data.to_numpy()
+Data = np.vstack([np.array(pd.read_csv('train_sample_'+str(i)+'.csv')) for i in range(1, 6)])
 if qoi == 'rdot':
     Data = np.hstack((Data[:, 3:-1], Data[:, 1].reshape(-1, 1))).astype(float)
 else:
@@ -100,7 +101,7 @@ eps = epsilon_0(Data, maxs, delta)
 delta = str(delta)
 print(eps)
 
-sparse1, Bs1, Cs1, f1, T1, meanerror1 = KfoldCV(Data, 2, eps, maxs)
+sparse1, Bs1, Cs1, f1, T1 = Multiscale_train(Data, eps, maxs)
 np.save('sparse_'+'_'+delta+'_'+qoi+'_'+dropout+'.npy', sparse1)
 np.save('Cs_'+'_'+delta+'_'+qoi+'_'+dropout+'.npy', Cs1)
 np.save('T_'+'_'+delta+'_'+qoi+'_'+dropout+'.npy', T1)
